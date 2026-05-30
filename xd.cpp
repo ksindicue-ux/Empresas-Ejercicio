@@ -65,12 +65,14 @@ int main() {
         }
         totalTrienal[i] = total2023[i] + total2024[i] + total2025[i];
     }
-
+    for (int i = 0; i < 5; i++) {
+        totales << empresas[i] << ": 2023: " << total2023[i] << " 2024: " << total2024[i] << " 2025: " << total2025[i] << " Total: " << totalTrienal[i] << "\n";
+    }
     datos2023.close();
     datos2024.close();
     datos2025.close();
     totales.close();
 
-    cout << "Se creo el code para las operaciones" << endl;
+    cout << "Se creo el archivo de salida" << endl;
     return 0;
 }
